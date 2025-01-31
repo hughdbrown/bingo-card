@@ -49,34 +49,14 @@ def generate_bingo_card(words, filename):
 
 def main():
     # List of words to fill the bingo card
-    words_list = [
-        "GOAT",
-        "IYKYK",
-        "OG",
-        "TFW",
-        "boujee",
-        "bro",
-        "church",
-        "clapback",
-        "dank",
-        "dope",
-        "flex",
-        "hits different",
-        "just saying",
-        "lit",
-        "living rent-free",
-        "no cap",
-        "rizz",
-        "salty",
-        "sesh",
-        "situation",
-        "sus",
-        "sweet",
-        "that slaps",
-        "true that",
-        "vibe check",
-        "yeet",
-    ]
+    words_list = (
+        "GOAT IYKYK OG TFW boujee bro church clapback dank "
+        "dope flex lit rizz salty sesh situation sus sweet yeet"
+    ).split(" ")
+    words_list.extend([
+        "hits different", "just saying", "living rent-free", "no cap", "true that",
+        "vibe check", "that slaps",
+    ])
 
     # Shuffle the words to randomize them
     random.shuffle(words_list)
